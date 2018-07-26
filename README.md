@@ -10,4 +10,4 @@
 ## TODO
 
 - Handle the events in a way that will work for individual instances of the dynamic components (event delegation)
-- Remove any element
+- Also an event delegation TODO: make it able to remove any element in any order

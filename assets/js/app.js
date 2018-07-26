@@ -1,6 +1,6 @@
 //TODO
     //Handle the events in a way that will work for individual instances of the dynamic components (event delegation)
-    //Remove any element, not just the first one
+    //Also an event delegation TODO - make it able to remove any element in any order
 
 
 //append component to body
@@ -46,7 +46,7 @@ function render() {
                                 </select>
                         </div>
                         <div class="col s3">
-                            <a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">delete</i></a>
+                            <a class="btn-floating btn-small waves-effect waves-light red" onClick="removeComponent()"><i class="material-icons">delete</i></a>
                         </div>
                     </div>
                 </div>
