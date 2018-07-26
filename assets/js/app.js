@@ -1,5 +1,5 @@
 //TODO
-    //Handle the events in a way that will work for individual instances of the dynamic components (not for only one or all of them)
+    //Handle the events in a way that will work for individual instances of the dynamic components (event delegation)
     //Remove any element, not just the first one
 
 
