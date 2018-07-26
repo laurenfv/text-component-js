@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" /> 
+        
+        <title>Text Component Challenge</title>
+
+        <!-- Materialize CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+        <!-- Added a link to Materialize Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Added a link to stylesheet-->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+
+    </head>
+    <body>
+
+        <button class="btn waves-effect waves-light black" onclick="addComponent();">Add Text</button>
+
+        <div id="comp" class="row">
+            <div id="grab" class="col s10">
+                <div class="card" id="color">
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s3">
+                                <i id="grab2" class="small material-icons custom_cursor">drag_handle</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span id="text" class="card-title" contenteditable="true">Tell me a story.</span>
+                    </div>
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="input-field col s3">
+                                <select id="input-font" class="input browser-default"  onchange="changeFont(this);">
+                                    <option value="Helvetica" selected ="selected">Helvetica</option>
+                                    <option value="Times New Roman">Times New Roman</option>
+                                </select>
+                            </div>
+                            <div class="input-field col s3">
+                                <select id="input-font-size" class="input browser-default"  onchange="changeSize(this);">
+                                    <option value="10px" selected ="selected">Small</option>
+                                    <option value="20px">Normal</option>
+                                    <option value="40px">Large</option>
+                                </select>
+                            </div>
+                            <div class="input-field col s3">
+                                    <select id="input-font-weight" class="input browser-default"  onchange="changeWeight(this);">
+                                        <option value="900" selected ="selected">Extra Bold</option>
+                                        <option value="600">Bold</option>
+                                        <option value="">Normal</option>
+                                    </select>
+                            </div>
+                            <div class="col s3">
+                                <a class="btn-floating btn-small waves-effect waves-light red" onClick="removeComponent()"><i class="material-icons">delete</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="assets/js/app.js"></script>
+
+        <!-- Compiled and minified Materialize JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    </body>
+</html>
